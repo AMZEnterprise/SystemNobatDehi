@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{058ABAA2-A605-4E8E-98BC-CA51820516F5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SystemNobatDehi</RootNamespace>
+    <AssemblyName>SystemNobatDehi</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>..\..\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Stimulsoft.Base, Version=2019.2.3.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL" />
+    <Reference Include="Stimulsoft.Client.Designer, Version=2019.2.3.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL" />
+    <Reference Include="Stimulsoft.Controls.Win, Version=2019.2.3.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL" />
+    <Reference Include="Stimulsoft.Dashboard, Version=2019.2.3.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL" />
+    <Reference Include="Stimulsoft.Dashboard.Design, Version=2019.2.3.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL" />
+    <Reference Include="Stimulsoft.Dashboard.Drawing, Version=2019.2.3.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL" />
+    <Reference Include="Stimulsoft.Dashboard.Export, Version=2019.2.3.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL" />
+    <Reference Include="Stimulsoft.Dashboard.Viewer, Version=2019.2.3.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL" />
+    <Reference Include="Stimulsoft.Data, Version=2019.2.3.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL" />
+    <Reference Include="Stimulsoft.Database, Version=2019.2.3.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL" />
+    <Reference Include="Stimulsoft.Design, Version=2019.2.3.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL" />
+    <Reference Include="Stimulsoft.Editor, Version=2019.2.3.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL" />
+    <Reference Include="Stimulsoft.Map, Version=2019.2.3.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL" />
+    <Reference Include="Stimulsoft.Report, Version=2019.2.3.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL" />
+    <Reference Include="Stimulsoft.Report.Check, Version=2019.2.3.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL" />
+    <Reference Include="Stimulsoft.Report.Design, Version=2019.2.3.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL" />
+    <Reference Include="Stimulsoft.Report.Helper, Version=2019.2.3.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VistaClockPersian">
+      <HintPath>..\..\VistaClockPersian.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clc_variable.cs" />
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAmalkard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAmalkard.Designer.cs">
+      <DependentUpon>frmAmalkard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBemeh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBemeh.designer.cs">
+      <DependentUpon>frmBemeh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGavahi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGavahi.Designer.cs">
+      <DependentUpon>frmGavahi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHazineh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHazineh.Designer.cs">
+      <DependentUpon>frmHazineh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfo.Designer.cs">
+      <DependentUpon>frmInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKarbar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKarbar.Designer.cs">
+      <DependentUpon>frmKarbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKhadamat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKhadamat.Designer.cs">
+      <DependentUpon>frmKhadamat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListHazineh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListHazineh.Designer.cs">
+      <DependentUpon>frmListHazineh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListMonshi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListMonshi.Designer.cs">
+      <DependentUpon>frmListMonshi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListNobat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListNobat.Designer.cs">
+      <DependentUpon>frmListNobat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListP.Designer.cs">
+      <DependentUpon>frmListP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListPardakht.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListPardakht.Designer.cs">
+      <DependentUpon>frmListPardakht.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListVizit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListVizit.Designer.cs">
+      <DependentUpon>frmListVizit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMonshi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMonshi.Designer.cs">
+      <DependentUpon>frmMonshi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNobat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNobat.Designer.cs">
+      <DependentUpon>frmNobat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmParvandeh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmParvandeh.Designer.cs">
+      <DependentUpon>frmParvandeh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVizit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVizit.Designer.cs">
+      <DependentUpon>frmVizit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAmalkard.resx">
+      <DependentUpon>frmAmalkard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBemeh.resx">
+      <DependentUpon>frmBemeh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGavahi.resx">
+      <DependentUpon>frmGavahi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHazineh.resx">
+      <DependentUpon>frmHazineh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfo.resx">
+      <DependentUpon>frmInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKarbar.resx">
+      <DependentUpon>frmKarbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKhadamat.resx">
+      <DependentUpon>frmKhadamat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListHazineh.resx">
+      <DependentUpon>frmListHazineh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListMonshi.resx">
+      <DependentUpon>frmListMonshi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListNobat.resx">
+      <DependentUpon>frmListNobat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListP.resx">
+      <DependentUpon>frmListP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListPardakht.resx">
+      <DependentUpon>frmListPardakht.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListVizit.resx">
+      <DependentUpon>frmListVizit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMonshi.resx">
+      <DependentUpon>frmMonshi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNobat.resx">
+      <DependentUpon>frmNobat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmParvandeh.resx">
+      <DependentUpon>frmParvandeh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVizit.resx">
+      <DependentUpon>frmVizit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.ico" />
+    <Content Include="Readme.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
